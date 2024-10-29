@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {{ if eq .Role "admin" }}
+
+    <p>Admin Panel</p>
+
+    <a href="/"><button>{{ .RootName }}</button></a>
+    <a href="/login"><button>{{ .LoginName }}</button></a>
+    <a href="/login/login-submit"><button>{{ .LoginSubmitName }}</button></a>
+    <a href="/registration"><button>{{.RegistrationName}}</button></a>
+    <a href="/registration/registration-submit"><button>{{.RegistrationSubmitName}}</button></a>
+    <a href="/logout"><button>{{ .LogoutName }}</button></a>
+    <a href="/profile"><button>{{ .ProfileName }}</button></a>
+    <a href="/profile/edit"><button>{{ .ProfileEditName }}</button></a>
+    <a href="/profile/edit/edit-submit"><button>{{ .ProfileEditSubmitName }}</button></a>
+
+    <p>--------</p>
+
+    <a href="/"><button>{{.RootName}}</button></a>
+
+    <h1>{{.Nickname}}</h1>
+    <p>{{.Bio}}</p>
+
+    <a href="/profile/edit"><button>{{.ProfileEditName}}</button></a>
+    <a href="/logout"><button>{{.LogoutName}}</button></a>
+
+    {{ end }}
+
+    {{ if eq .Role "user" }}
+
+    <a href="/"><button>{{.RootName}}</button></a>
+
+    <h1>{{.Nickname}}</h1>
+    <p>{{.Bio}}</p>
+
+    <a href="/profile/edit"><button>{{.ProfileEditName}}</button></a>
+    <a href="/logout"><button>{{.LogoutName}}</button></a>
+
+    {{ end }}
+</body>
+</html>

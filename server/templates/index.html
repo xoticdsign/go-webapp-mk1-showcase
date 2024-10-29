@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {{ if eq .Role "admin" }}
+
+    <p>Admin Panel</p>
+
+    <a href="/"><button>{{ .RootName }}</button></a>
+    <a href="/login"><button>{{ .LoginName }}</button></a>
+    <a href="/login/login-submit"><button>{{ .LoginSubmitName }}</button></a>
+    <a href="/registration"><button>{{.RegistrationName}}</button></a>
+    <a href="/registration/registration-submit"><button>{{.RegistrationSubmitName}}</button></a>
+    <a href="/logout"><button>{{ .LogoutName }}</button></a>
+    <a href="/profile"><button>{{ .ProfileName }}</button></a>
+    <a href="/profile/edit"><button>{{ .ProfileEditName }}</button></a>
+    <a href="/profile/edit/edit-submit"><button>{{ .ProfileEditSubmitName }}</button></a>
+
+    <p>--------</p>
+
+    <a href="/"><button>{{ .RootName }}</button></a>
+    <a href="/profile"><button>{{ .ProfileName }}</button></a>
+
+    <h1>Welcome Admin!</h1>
+    <p>*This version of the app is created for test purposes</p>
+
+    {{ end }}
+
+    {{ if eq .Role "user" }}
+
+    <a href="/"><button>{{ .RootName }}</button></a>
+    <a href="/profile"><button>{{ .ProfileName }}</button></a>
+
+    <h1>go-webapp-mark1-showcase</h1>
+    <p>This project is a server-rendered web application built with the Go programming language, leveraging the GoFiber framework. It implements secure user registration, login, and profile management with JWT-based authentication.</p>
+
+    {{ end }}
+
+    {{ if eq .Role "visitor" }}
+
+    <a href="/"><button>{{ .RootName }}</button></a>
+    <a href="/login"><button>{{ .LoginName }}</button></a>
+
+    <h1>go-webapp-mark1-showcase</h1>
+    <p>This project is a server-rendered web application built with the Go programming language, leveraging the GoFiber framework. It implements secure user registration, login, and profile management with JWT-based authentication.</p>
+    
+    {{ end }}
+</body>
+</html>

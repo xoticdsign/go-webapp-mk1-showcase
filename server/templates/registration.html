@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a href="/"><button>Home</button></a>
+    <a href="/login"><button>Login</button></a>
+
+    <h1>Registration</h1>
+
+    <form action="registration/registration-submit" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="nickname">Nickname:</label><br>
+        <input type="text" id="nickname" name="nickname" required><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <input type="text" id="bio" name="bio"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="passwordVerify">Confirm your password:</label><br>
+        <input type="password" id="passwordVerify" name="passwordVerify" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
