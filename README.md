@@ -77,7 +77,7 @@ git clone https://github.com/xoticdsign/go-webapp-mk1-showcase
 ```
 
 ```bash
-cd go-webapp-mark1-showcase
+cd go-webapp-mk1-showcase
 ```
 
 2. Set Environment Variables:
