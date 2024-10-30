@@ -1,4 +1,4 @@
-# go-webapp-mark1-showcase
+# go-webapp-mk1-showcase
 
 This project is a server-rendered web application built with the Go programming language, leveraging the GoFiber framework. It implements secure user registration, login, and profile management with JWT-based authentication. It runs on WLAN and can be accesses from any device connected to your WI-FI (check ["Installation"](#installation))! This README provides an overview of the application’s structure, setup instructions, and a summary of each key component.
 
