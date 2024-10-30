@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"go-webapp-mark1-showcase/gojwt"
+	"go-webapp-mk1-showcase/gojwt"
 
 	"github.com/gofiber/fiber/v2"
 )

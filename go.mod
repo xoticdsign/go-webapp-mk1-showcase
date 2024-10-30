@@ -1,4 +1,4 @@
-module go-webapp-mark1-showcase
+module go-webapp-mk1-showcase
 
 go 1.22.5
 

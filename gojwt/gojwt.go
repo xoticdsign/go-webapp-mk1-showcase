@@ -1,7 +1,7 @@
 package gojwt
 
 import (
-	"go-webapp-mark1-showcase/gorm"
+	"go-webapp-mk1-showcase/gorm"
 
 	"os"
 	"time"

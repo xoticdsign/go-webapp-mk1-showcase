@@ -21,7 +21,7 @@ This project is a server-rendered web application built with the Go programming 
 Project structure is simplified for showcasing purposes.
 
 ```
-go-webapp-mark1-showcase/
+go-webapp-mk1-showcase/
 ├── gobcrypt/
 │   └── gobcrypt.go
 ├── gojwt/
@@ -73,7 +73,7 @@ go-webapp-mark1-showcase/
 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/xoticdsign/go-webapp-mark1-showcase
+git clone https://github.com/xoticdsign/go-webapp-mk1-showcase
 ```
 
 ```bash

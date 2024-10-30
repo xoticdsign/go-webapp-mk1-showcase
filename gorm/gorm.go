@@ -1,7 +1,7 @@
 package gorm
 
 import (
-	"go-webapp-mark1-showcase/gobcrypt"
+	"go-webapp-mk1-showcase/gobcrypt"
 
 	"fmt"
 	"os"

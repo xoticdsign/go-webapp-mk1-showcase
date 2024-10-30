@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"go-webapp-mark1-showcase/gojwt"
-	"go-webapp-mark1-showcase/gorm"
+	"go-webapp-mk1-showcase/gojwt"
+	"go-webapp-mk1-showcase/gorm"
 
 	"fmt"
 	"time"

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"go-webapp-mark1-showcase/gorm"
-	"go-webapp-mark1-showcase/server/handlers"
-	"go-webapp-mark1-showcase/server/middleware"
+	"go-webapp-mk1-showcase/gorm"
+	"go-webapp-mk1-showcase/server/handlers"
+	"go-webapp-mk1-showcase/server/middleware"
 	"time"
 
 	"errors"
@@ -31,7 +31,7 @@ func main() {
 		Views:        html.New("./server/templates", ".html"),
 		ReadTimeout:  time.Second * 20,
 		WriteTimeout: time.Second * 20,
-		AppName:      "go-webapp-mark1-showcase",
+		AppName:      "go-webapp-mk1-showcase",
 	})
 
 	app.Use("/", middleware.Auth)
